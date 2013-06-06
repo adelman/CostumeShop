@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  description: MyString
+  clean: MyString
+  back: false
+  photo: MyString
+  agreement: 
+
+two:
+  description: MyString
+  clean: MyString
+  back: false
+  photo: MyString
+  agreement: 

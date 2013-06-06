@@ -37,11 +37,17 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    crack (0.4.0)
+      safe_yaml (~> 0.9.0)
+    curb (0.8.4)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     hike (1.2.3)
     i18n (0.6.1)
+    imgur (0.2.0)
+      crack (>= 0.1.4)
+      curb (>= 0.5.4.0)
     journey (1.0.4)
     jquery-rails (3.0.0)
       railties (>= 3.0, < 5.0)
@@ -78,6 +84,7 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
+    safe_yaml (0.9.3)
     sass (3.2.9)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -104,6 +111,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  imgur
   jquery-rails
   json
   rails (= 3.2.13)

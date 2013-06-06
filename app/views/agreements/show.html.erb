@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+Agreement created by <%= @agreement.employee %>
+
+<br />
+
+<h3>Contact Information</h3>
+<p>
+  <b>Name:</b>
+  <%= @agreement.name %>
+
+  <b>Telephone:</b>
+  <%= @agreement.phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @agreement.email %>
+
+  <b>Mailbox:</b>
+  <%= @agreement.box %>
+</p>
+
+<br />
+
+<h3>Performance Information</h3>
+<p>
+  <b>Title of Performance:</b>
+  <%= @agreement.title %>
+</p>
+
+<p>
+  <b>Performance Start Date:</b>
+  <%= (@agreement.perfstart).to_date %>
+
+  <b>Performance End Date:</b>
+  <%= (@agreement.perfend).to_date %>
+</p>
+
+<p>
+  <b>Due Date:</b>
+  <%= (@agreement.duedate).to_date %>
+
+  <b>Financer:</b>
+  <%= @agreement.financer %>
+</p>
+
+<br />
+
+<h3>Costume Status</h3>
+
+
+<%= link_to 'Edit', edit_agreement_path(@agreement) %> |
+<%= link_to 'Back', agreements_path %>
