@@ -10,7 +10,7 @@ Agreement created by <%= @agreement.employee %>
   <%= @agreement.name %>
 
   <b>Telephone:</b>
-  <%= @agreement.phone %>
+  <%= number_to_phone(@agreement.phone, :area_code => true) %>
 </p>
 
 <p>
@@ -47,8 +47,112 @@ Agreement created by <%= @agreement.employee %>
 
 <br />
 
-<h3>Costume Status</h3>
+<h3>Items Damaged or Lost</h3>
+  <div id="full_width_div">
+    <div class="invoice_under">
+      Cost
+    </div>
+    <div class="description">
+      Items Lost/Damaged
+    </div>
 
+    <div class="number">1</div>
+    <div class="invoice_under">
+      $<%= @agreement.cost0 %>
+    </div>
+        <div class="description">
+      <% if @agreement.lost0 == "" %>
+        Null
+      <% else %>
+      <%= @agreement.lost0 %>
+      <% end %>
+    </div>
+
+    <div class="number">2</div>
+    <div class="invoice_under">
+      $<%= @agreement.cost1 %>
+    </div>
+    <div class="description">
+      <% if @agreement.lost1 == "" %>
+        Null
+      <% else %>
+      <%= @agreement.lost1 %>
+      <% end %>
+    </div>
+
+    <div class="number">3</div>
+    <div class="invoice_under">
+      $<%= @agreement.cost2 %>
+    </div>
+    <div class="description">
+      <% if @agreement.lost2 == "" %>
+        Null
+      <% else %>
+      <%= @agreement.lost2 %>
+      <% end %>
+    </div>
+
+    <div class="number">4</div>
+    <div class="invoice_under">
+      $<%= @agreement.cost3 %>
+    </div>
+    <div class="description">
+      <% if @agreement.lost3 == "" %>
+        Null
+      <% else %>
+      <%= @agreement.lost3 %>
+      <% end %>
+    </div>
+
+    <div class="number">5</div>
+    <div class="invoice_under">
+      $<%= @agreement.cost4 %>
+    </div>
+    <div class="description">
+      <% if @agreement.lost4 == "" %>
+        Null
+      <% else %>
+      <%= @agreement.lost4 %>
+      <% end %>
+    </div>
+
+  </div>
+
+  <br />
+
+<h3>Costumes</h3>
+<div id="full_width_div">
+  <div class="number">
+    #
+  </div>
+  <div class="back">
+    Back?
+  </div>
+  <div class="wd">
+    W/D
+  </div>
+  <div class="description">
+    Garment Description
+  </div>    
+
+  <div style="clear:both;" />
+  <% @agreement.costumes.each do |costume| %>
+    <div class="number"> 
+      <%= costume.id %>
+    </div> 
+    <div class="back">
+      <%= costume.back %>
+    </div>
+    <div class="wd">
+      <%= costume.clean %>
+    </div>
+  <div class="description">
+    <%= costume.description %>
+  </div>
+</div>
+  <% end %>
+
+<br />
 
 <%= link_to 'Edit', edit_agreement_path(@agreement) %> |
 <%= link_to 'Back', agreements_path %>

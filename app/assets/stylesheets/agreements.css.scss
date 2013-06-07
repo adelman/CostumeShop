@@ -1,3 +1,70 @@
 // Place all the styles related to the Agreements controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#full_width_div {
+    width:600px;
+}
+.description {
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    border-bottom: 1px solid;
+}
+.pull_left {
+    float:left;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.number {
+    overflow:hidden;
+    float:left;
+    width:20px;
+    text-align:center;
+        border-bottom: 1px solid;
+}
+.photo {
+    white-space:nowrap;
+    float:right;
+    width:100px;
+    text-align:center;
+    border-bottom: 1px solid;   
+}
+.invoice_under {
+    white-space:nowrap;
+    float:right;
+    width:150px;
+    text-align:right;
+    border-bottom: 1px solid;   
+}
+.invoice {
+    white-space:nowrap;
+    float:right;
+    width:150px;
+    text-align:right;
+}
+
+
+.wd {
+    white-space:nowrap;
+    float:right;
+    width:50px;
+    text-align:center;
+    border-bottom: 1px solid;
+}
+
+.num2 {
+    white-space:nowrap;
+    float:left;
+    width:20px;
+    text-align:center;
+}
+
+
+.back {
+   float:right;
+   white-space:nowrap;
+   width:50px;
+   text-align:center;
+    border-bottom: 1px solid;
+}

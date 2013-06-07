@@ -17,6 +17,7 @@
     <%= f.text_field :employee %>
   </div>
 
+  <br />
 
   <h3>Contact Information:</h3>
   <table>
@@ -33,14 +34,17 @@
   <tr>
     <td><div class="field">
     <%= f.label :email %><br />
-    <%= f.text_field :email %>
+    <%= f.email_field :email %>
     </div></td>
     <td><div class="field">
     <%= f.label "Mailbox" %><br />
     <%= f.text_field :box %>
   </div></td>
   </tr>
-  </table>
+</table>
+
+  <br />
+
   
   <h3>Performance Information</h3>
 
@@ -69,18 +73,66 @@
     <%= f.text_field :financer %>
     </div></td>
   </tr>
-  </table>
+</table>
 
-  <h3>Items Borrowed</h3>
-  <table>
-    <tr>
-      <td>#</td><td>Garmnert Description</td> <td>W/D</td><td>Back?</td>
-    </tr>
-          <hr>
-
-  </table>
+  <br />
 
 
+  <h3>Items Damaged or Lost</h3>
+  <div id="full_width_div">
+    <div class="invoice_under">
+      Cost
+    </div>
+    <div class="description">
+      Items Lost/Damaged
+    </div>
+
+    <div class="num2">1</div>
+    <div class="pull_left field">
+      <%= f.text_field :lost0 %>
+    </div>
+    <div class="invoice field">
+      $<%= f.text_field :cost0 %>
+    </div><br />
+
+    <div class="num2">2</div>
+    <div class="pull_left field">
+      <%= f.text_field :lost1 %>
+    </div>
+    <div class="invoice field">
+      $<%= f.text_field :cost1 %>
+    </div><br />
+
+    <div class="num2">3</div>
+    <div class="pull_left field">
+      <%= f.text_field :lost2 %>
+    </div>
+    <div class="invoice field">
+      $<%= f.text_field :cost2 %>
+    </div><br />
+
+    <div class="num2">4</div>
+    <div class="pull_left field">
+      <%= f.text_field :lost3 %>
+    </div>
+    <div class="invoice field">
+      $<%= f.text_field :cost3 %>
+    </div><br />
+
+    <div class="num2">5</div>
+    <div class="pull_left field">
+      <%= f.text_field :lost4 %>
+    </div>
+    <div class="invoice field">
+      $<%= f.text_field :cost4 %>
+    </div><br />
+
+
+  </div>
+
+
+
+  <br />
   <div class="actions">
     <%= f.submit %>
   </div>
