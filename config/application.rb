@@ -9,8 +9,6 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-config.time_zone = 'Eastern Time (US & Canada)'
-
 module CostumeShop
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -60,5 +58,8 @@ module CostumeShop
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.time_zone = 'Eastern Time (US & Canada)'
+
   end
 end
