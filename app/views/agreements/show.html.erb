@@ -118,7 +118,99 @@ Agreement created by <%= @agreement.employee %>
 
   </div>
 
-  <br />
+<br />
+
+<h3>Dry Cleaning Information</h3>
+  <div id="full_width_div">
+    <div class="invoice_under">
+      # of Garments/Invoice
+    </div>
+    <div class="description">
+      Dry Cleaning Invoice #
+    </div>
+
+    <div class="number">1</div>
+    <div class="invoice_under">
+      #<%= @agreement.gar0 %>
+    </div>
+    <div class="description">
+      #<%= @agreement.dry0 %>
+    </div>
+
+    <div class="number">2</div>
+    <div class="invoice_under">
+      #<%= @agreement.gar1 %>
+    </div>
+    <div class="description">
+      #<%= @agreement.dry1 %>
+    </div>
+
+    <div class="number">3</div>
+    <div class="invoice_under">
+      #<%= @agreement.gar2 %>
+    </div>
+    <div class="description">
+      #<%= @agreement.dry2 %>
+    </div>
+
+    <div class="number">4</div>
+    <div class="invoice_under">
+      #<%= @agreement.gar3 %>
+    </div>
+    <div class="description">
+      #<%= @agreement.dry3 %>
+    </div>
+
+    <div class="number">5</div>
+    <div class="invoice_under">
+      #<%= @agreement.gar4 %>
+    </div>
+    <div class="description">
+      #<%= @agreement.dry4 %>
+    </div>
+
+    <div class="number">6</div>
+    <div class="invoice_under">
+      #<%= @agreement.gar5 %>
+    </div>
+    <div class="description">
+      #<%= @agreement.dry5 %>
+    </div>
+
+    <div class="number">7</div>
+    <div class="invoice_under">
+      #<%= @agreement.gar6 %>
+    </div>
+    <div class="description">
+      #<%= @agreement.dry6 %>
+    </div>
+
+    <div class="number">8</div>
+    <div class="invoice_under">
+      #<%= @agreement.gar7 %>
+    </div>
+    <div class="description">
+      #<%= @agreement.dry7 %>
+    </div>
+
+    <div class="number">9</div>
+    <div class="invoice_under">
+      #<%= @agreement.gar8 %>
+    </div>
+    <div class="description">
+      #<%= @agreement.dry8 %>
+    </div>
+
+    <div class="number">10</div>
+    <div class="invoice_under">
+      #<%= @agreement.gar9 %>
+    </div>
+    <div class="description">
+      #<%= @agreement.dry9 %>
+    </div>
+  </div>
+
+<br />
 
 <h3>Costumes</h3>
 <div id="full_width_div">
@@ -128,29 +220,1267 @@ Agreement created by <%= @agreement.employee %>
   <div class="back">
     Back?
   </div>
+  <div class="photo">
+    Photo
+  </div>
   <div class="wd">
     W/D
   </div>
   <div class="description">
     Garment Description
-  </div>    
+  </div>  
 
-  <div style="clear:both;" />
-  <% @agreement.costumes.each do |costume| %>
-    <div class="number"> 
-      <%= costume.id %>
-    </div> 
-    <div class="back">
-      <%= costume.back %>
+  <div class="number">1</div>
+  <div class="back">
+    <% if @agreement.back00 == nil || @agreement.back00 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
     </div>
-    <div class="wd">
-      <%= costume.clean %>
-    </div>
-  <div class="description">
-    <%= costume.description %>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo00}",
+    :target => "_blank" %>
   </div>
+  <div class="wd">
+    <% unless @agreement.wd00 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd00 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item00 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item00 %>
+  </div>
+
+<div class="number">2</div>
+  <div class="back">
+    <% if @agreement.back01 == nil || @agreement.back01 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo01}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd01 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd01 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item01 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item01 %>
+  </div>
+
+  <div class="number">3</div>
+  <div class="back">
+    <% if @agreement.back02 == nil || @agreement.back02 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo02}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd02 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd02 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item02 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item02 %>
+  </div>
+
+  <div class="number">4</div>
+  <div class="back">
+    <% if @agreement.back03 == nil || @agreement.back03 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo03}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd03 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd03 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item03 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item03 %>
+  </div>
+
+  <div class="number">5</div>
+  <div class="back">
+    <% if @agreement.back04 == nil || @agreement.back04 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo04}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd04 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd04 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item04 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item04 %>
+  </div>
+
+  <div class="number">6</div>
+  <div class="back">
+    <% if @agreement.back05 == nil || @agreement.back05 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo05}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd05 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd05 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item05 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item05 %>
+  </div>
+
+  <div class="number">7</div>
+  <div class="back">
+    <% if @agreement.back06 == nil || @agreement.back06 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo06}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd06 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd06 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item06 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item06 %>
+  </div>
+
+  <div class="number">8</div>
+  <div class="back">
+    <% if @agreement.back07 == nil || @agreement.back07 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo07}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd07 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd07 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item07 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item07 %>
+  </div>
+
+  <div class="number">9</div>
+  <div class="back">
+    <% if @agreement.back08 == nil || @agreement.back08 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo08}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd08 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd08 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item08 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item08 %>
+  </div>
+
+  <div class="number">10</div>
+  <div class="back">
+    <% if @agreement.back09 == nil || @agreement.back09 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo09}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd09 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd09 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item09 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item09 %>
+  </div>
+
+  <div class="number">11</div>
+  <div class="back">
+    <% if @agreement.back10 == nil || @agreement.back10 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo10}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd10 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd10 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item10 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item10 %>
+  </div>
+
+  <div class="number">12</div>
+  <div class="back">
+    <% if @agreement.back11 == nil || @agreement.back11 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo11}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd11 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd11 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item11 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item11 %>
+  </div>
+
+  <div class="number">13</div>
+  <div class="back">
+    <% if @agreement.back12 == nil || @agreement.back12 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo12}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd12 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd12 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item12 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item12 %>
+  </div>
+
+  <div class="number">14</div>
+  <div class="back">
+    <% if @agreement.back13 == nil || @agreement.back13 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo13}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd13 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd13 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item13 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item13 %>
+  </div>
+
+  <div class="number">15</div>
+  <div class="back">
+    <% if @agreement.back14 == nil || @agreement.back14 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo14}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd14 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd14 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item14 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item14 %>
+  </div>
+
+  <div class="number">16</div>
+  <div class="back">
+    <% if @agreement.back15 == nil || @agreement.back15 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo15}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd15 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd15 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item15 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item15 %>
+  </div>
+
+  <div class="number">17</div>
+  <div class="back">
+    <% if @agreement.back16 == nil || @agreement.back16 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo16}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd16 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd16 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item16 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item16 %>
+  </div>
+
+  <div class="number">18</div>
+  <div class="back">
+    <% if @agreement.back17 == nil || @agreement.back17 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo17}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd17 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd17 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item17 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item17 %>
+  </div>
+
+  <div class="number">19</div>
+  <div class="back">
+    <% if @agreement.back18 == nil || @agreement.back18 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo18}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd18 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd18 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item18 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item18 %>
+  </div>
+
+  <div class="number">20</div>
+  <div class="back">
+    <% if @agreement.back19 == nil || @agreement.back19 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo19}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd19 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd19 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item19 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item19 %>
+  </div>
+
+  <div class="number">21</div>
+  <div class="back">
+    <% if @agreement.back20 == nil || @agreement.back20 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo20}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd20 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd20 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item20 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item20 %>
+  </div>
+
+  <div class="number">22</div>
+  <div class="back">
+    <% if @agreement.back21 == nil || @agreement.back21 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo21}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd21 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd21 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item21 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item21 %>
+  </div>
+
+  <div class="number">23</div>
+  <div class="back">
+    <% if @agreement.back22 == nil || @agreement.back22 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo22}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd22 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd22 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item22 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item22 %>
+  </div>
+
+  <div class="number">24</div>
+  <div class="back">
+    <% if @agreement.back23 == nil || @agreement.back23 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo23}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd23 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd23 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item23 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item23 %>
+  </div>
+
+  <div class="number">25</div>
+  <div class="back">
+    <% if @agreement.back24 == nil || @agreement.back24 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo24}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd24 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd24 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item24 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item24 %>
+  </div>
+
+  <div class="number">26</div>
+  <div class="back">
+    <% if @agreement.back25 == nil || @agreement.back25 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo25}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd25 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd25 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item25 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item25 %>
+  </div>
+
+  <div class="number">27</div>
+  <div class="back">
+    <% if @agreement.back26 == nil || @agreement.back26 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo26}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd26 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd26 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item26 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item26 %>
+  </div>
+
+  <div class="number">28</div>
+  <div class="back">
+    <% if @agreement.back27 == nil || @agreement.back27 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo27}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd27 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd27 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item27 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item27 %>
+  </div>
+
+  <div class="number">29</div>
+  <div class="back">
+    <% if @agreement.back28 == nil || @agreement.back28 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo28}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd28 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd28 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item28 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item28 %>
+  </div>
+
+  <div class="number">30</div>
+  <div class="back">
+    <% if @agreement.back29 == nil || @agreement.back29 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo29}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd29 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd29 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item29 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item29 %>
+  </div>
+
+  <div class="number">31</div>
+  <div class="back">
+    <% if @agreement.back30 == nil || @agreement.back30 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo30}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd30 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd30 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item30 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item30 %>
+  </div>
+
+  <div class="number">32</div>
+  <div class="back">
+    <% if @agreement.back31 == nil || @agreement.back31 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo31}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd31 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd31 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item31 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item31 %>
+  </div>
+
+  <div class="number">33</div>
+  <div class="back">
+    <% if @agreement.back32 == nil || @agreement.back32 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo32}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd32 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd32 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item32 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item32 %>
+  </div>
+
+  <div class="number">34</div>
+  <div class="back">
+    <% if @agreement.back33 == nil || @agreement.back33 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo33}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd33 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd33 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item33 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item33 %>
+  </div>
+
+  <div class="number">35</div>
+  <div class="back">
+    <% if @agreement.back34 == nil || @agreement.back34 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo34}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd34 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd34 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item34 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item34 %>
+  </div>
+
+  <div class="number">36</div>
+  <div class="back">
+    <% if @agreement.back35 == nil || @agreement.back35 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo35}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd35 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd35 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item35 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item35 %>
+  </div>
+
+  <div class="number">37</div>
+  <div class="back">
+    <% if @agreement.back36 == nil || @agreement.back36 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo36}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd36 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd36 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item36 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item36 %>
+  </div>
+
+  <div class="number">38</div>
+  <div class="back">
+    <% if @agreement.back37 == nil || @agreement.back37 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo37}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd37 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd37 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item37 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item37 %>
+  </div>
+
+  <div class="number">39</div>
+  <div class="back">
+    <% if @agreement.back38 == nil || @agreement.back38 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo38}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd38 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd38 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item38 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item38 %>
+  </div>
+
+  <div class="number">40</div>
+  <div class="back">
+    <% if @agreement.back39 == nil || @agreement.back39 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo39}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd39 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd39 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item39 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item39 %>
+  </div>
+
+  <div class="number">41</div>
+  <div class="back">
+    <% if @agreement.back40 == nil || @agreement.back40 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo40}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd40 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd40 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item40 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item40 %>
+  </div>
+
+  <div class="number">42</div>
+  <div class="back">
+    <% if @agreement.back41 == nil || @agreement.back41 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo41}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd41 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd41 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item41 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item41 %>
+  </div>
+
+  <div class="number">43</div>
+  <div class="back">
+    <% if @agreement.back42 == nil || @agreement.back42 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo42}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd42 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd42 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item42 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item42 %>
+  </div>
+
+  <div class="number">44</div>
+  <div class="back">
+    <% if @agreement.back43 == nil || @agreement.back43 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo43}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd43 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd43 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item43 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item43 %>
+  </div>
+
+  <div class="number">45</div>
+  <div class="back">
+    <% if @agreement.back44 == nil || @agreement.back44 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo44}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd44 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd44 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item44 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item44 %>
+  </div>
+
+  <div class="number">46</div>
+  <div class="back">
+    <% if @agreement.back45 == nil || @agreement.back45 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo45}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd45 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd45 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item45 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item45 %>
+  </div>
+
+  <div class="number">47</div>
+  <div class="back">
+    <% if @agreement.back46 == nil || @agreement.back46 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo46}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd46 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd46 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item46 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item46 %>
+  </div>
+
+  <div class="number">48</div>
+  <div class="back">
+    <% if @agreement.back47 == nil || @agreement.back47 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo47}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd47 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd47 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item47 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item47 %>
+  </div>
+
+  <div class="number">49</div>
+  <div class="back">
+    <% if @agreement.back48 == nil || @agreement.back48 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo48}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd48 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd48 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item48 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item48 %>
+  </div>
+
+  <div class="number">50</div>
+  <div class="back">
+    <% if @agreement.back49 == nil || @agreement.back49 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="photo">
+    <%= link_to "Photo", "http://imgur.com/#{@agreement.photo49}",
+    :target => "_blank" %>
+  </div>
+  <div class="wd">
+    <% unless @agreement.wd49 != nil %>
+      ?
+    <% end %>
+    <%= @agreement.wd49 %>
+  </div>
+  <div class="description">
+    <% unless @agreement.item49 != nil %>
+      Null
+    <% end %>
+    <%= @agreement.item49 %>
+  </div>
+
 </div>
-  <% end %>
 
 <br />
 

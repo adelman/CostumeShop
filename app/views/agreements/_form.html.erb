@@ -93,23 +93,23 @@
     </div>
     <div class="invoice field">
       $<%= f.text_field :cost0 %>
-    </div><br />
+    </div><br /><br />
 
-    <div class="num2">2</div>
+        <div class="num2">2</div>
     <div class="pull_left field">
       <%= f.text_field :lost1 %>
     </div>
     <div class="invoice field">
       $<%= f.text_field :cost1 %>
-    </div><br />
-
+    </div><br /><br />
+    
     <div class="num2">3</div>
     <div class="pull_left field">
-      <%= f.text_field :lost2 %>
+      <%=  f.text_field :lost2 %>
     </div>
     <div class="invoice field">
       $<%= f.text_field :cost2 %>
-    </div><br />
+    </div><br /><br />
 
     <div class="num2">4</div>
     <div class="pull_left field">
@@ -117,7 +117,7 @@
     </div>
     <div class="invoice field">
       $<%= f.text_field :cost3 %>
-    </div><br />
+    </div><br /><br />
 
     <div class="num2">5</div>
     <div class="pull_left field">
@@ -127,12 +127,104 @@
       $<%= f.text_field :cost4 %>
     </div><br />
 
+  </div>
+
+  <br /><br />
+
+  <h3>Dry Cleaning Information</h3>
+  <div id="full_width_div">
+    <div class="invoice_under">
+      # of Garments/Invoice
+    </div>
+    <div class="description">
+      Dry Cleaning Invoice #
+    </div>
+
+    <div class="num2">1</div>
+    <div class="pull_left field">
+      #<%= f.number_field :dry0 %>
+    </div>
+    <div class="invoice field">
+      #<%= f.number_field :gar0 %>
+    </div><br /><br />
+
+    <div class="num2">2</div>
+    <div class="pull_left field">
+      #<%= f.number_field :dry1 %>
+    </div>
+    <div class="invoice field">
+      #<%= f.number_field :gar1 %>
+    </div><br /><br />
+
+    <div class="num2">3</div>
+    <div class="pull_left field">
+      #<%= f.number_field :dry2 %>
+    </div>
+    <div class="invoice field">
+      #<%= f.number_field :gar2 %>
+    </div><br /><br />
+
+    <div class="num2">4</div>
+    <div class="pull_left field">
+      #<%= f.number_field :dry3 %>
+    </div>
+    <div class="invoice field">
+      #<%= f.number_field :gar3 %>
+    </div><br /><br />
+
+    <div class="num2">5</div>
+    <div class="pull_left field">
+      #<%= f.number_field :dry4 %>
+    </div>
+    <div class="invoice field">
+      #<%= f.number_field :gar4 %>
+    </div><br /><br />
+
+    <div class="num2">6</div>
+    <div class="pull_left field">
+      #<%= f.number_field :dry5 %>
+    </div>
+    <div class="invoice field">
+      #<%= f.number_field :gar5 %>
+    </div><br /><br />
+
+    <div class="num2">7</div>
+    <div class="pull_left field">
+      #<%= f.number_field :dry6 %>
+    </div>
+    <div class="invoice field">
+      #<%= f.number_field :gar6 %>
+    </div><br /><br />
+
+    <div class="num2">8</div>
+    <div class="pull_left field">
+      #<%= f.number_field :dry7 %>
+    </div>
+    <div class="invoice field">
+      #<%= f.number_field :gar7 %>
+    </div><br /><br />
+
+    <div class="num2">9</div>
+    <div class="pull_left field">
+      #<%= f.number_field :dry8 %>
+    </div>
+    <div class="invoice field">
+      #<%= f.number_field :gar8 %>
+    </div><br /><br />
+
+    <div class="num2">10</div>
+    <div class="pull_left field">
+      #<%= f.number_field :dry9 %>
+    </div>
+    <div class="invoice field">
+      #<%= f.number_field :gar9 %>
+    </div><br /><br />
 
   </div>
 
 
 
-  <br />
+  <br /> <br />
   <div class="actions">
     <%= f.submit %>
   </div>
