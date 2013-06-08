@@ -30,6 +30,27 @@
     text-align:center;
     border-bottom: 1px solid;   
 }
+.photo2 {
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    float:right;
+    width:150px;
+    height:23px;
+    text-align:center;
+    border-bottom: 1px solid;   
+}
+.photo3 {
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    float:right;
+    width:150px;
+    text-align:center;
+    border-bottom: 1px solid;   
+}
+
+
 .invoice_under {
     white-space:nowrap;
     float:right;
@@ -52,6 +73,15 @@
     text-align:center;
     border-bottom: 1px solid;
 }
+.wd2 {
+    white-space:nowrap;
+    float:right;
+    width:50px;
+    height:23px;
+    text-align:center;
+    border-bottom: 1px solid;
+}
+
 
 .num2 {
     white-space:nowrap;
@@ -59,12 +89,30 @@
     width:20px;
     text-align:center;
 }
+.num3 {
+    white-space:nowrap;
+    float:left;
+    height:23px;
+    width:20px;
+    text-align:center;
+    border-bottom: 1px solid;   
+    
+}
+
 
 
 .back {
    float:right;
    white-space:nowrap;
    width:50px;
+   text-align:center;
+    border-bottom: 1px solid;
+}
+.back2 {
+   float:right;
+   white-space:nowrap;
+   width:50px;
+   height:23px;
    text-align:center;
     border-bottom: 1px solid;
 }

@@ -48,75 +48,75 @@ Agreement created by <%= @agreement.employee %>
 <br />
 
 <h3>Items Damaged or Lost</h3>
-  <div id="full_width_div">
-    <div class="invoice_under">
-      Cost
-    </div>
-    <div class="description">
-      Items Lost/Damaged
-    </div>
-
-    <div class="number">1</div>
-    <div class="invoice_under">
-      $<%= @agreement.cost0 %>
-    </div>
-        <div class="description">
-      <% if @agreement.lost0 == "" %>
-        Null
-      <% else %>
-      <%= @agreement.lost0 %>
-      <% end %>
-    </div>
-
-    <div class="number">2</div>
-    <div class="invoice_under">
-      $<%= @agreement.cost1 %>
-    </div>
-    <div class="description">
-      <% if @agreement.lost1 == "" %>
-        Null
-      <% else %>
-      <%= @agreement.lost1 %>
-      <% end %>
-    </div>
-
-    <div class="number">3</div>
-    <div class="invoice_under">
-      $<%= @agreement.cost2 %>
-    </div>
-    <div class="description">
-      <% if @agreement.lost2 == "" %>
-        Null
-      <% else %>
-      <%= @agreement.lost2 %>
-      <% end %>
-    </div>
-
-    <div class="number">4</div>
-    <div class="invoice_under">
-      $<%= @agreement.cost3 %>
-    </div>
-    <div class="description">
-      <% if @agreement.lost3 == "" %>
-        Null
-      <% else %>
-      <%= @agreement.lost3 %>
-      <% end %>
-    </div>
-
-    <div class="number">5</div>
-    <div class="invoice_under">
-      $<%= @agreement.cost4 %>
-    </div>
-    <div class="description">
-      <% if @agreement.lost4 == "" %>
-        Null
-      <% else %>
-      <%= @agreement.lost4 %>
-      <% end %>
-    </div>
-
+<div id="full_width_div">
+  <div class="invoice_under">
+    Cost
   </div>
+  <div class="description">
+    Items Lost/Damaged
+  </div>
+
+  <div class="number">1</div>
+  <div class="invoice_under">
+    $<%= @agreement.cost0 %>
+  </div>
+      <div class="description">
+    <% if @agreement.lost0 == "" %>
+      Null
+    <% else %>
+    <%= @agreement.lost0 %>
+    <% end %>
+  </div>
+
+  <div class="number">2</div>
+  <div class="invoice_under">
+    $<%= @agreement.cost1 %>
+  </div>
+  <div class="description">
+    <% if @agreement.lost1 == "" %>
+      Null
+    <% else %>
+    <%= @agreement.lost1 %>
+    <% end %>
+  </div>
+
+  <div class="number">3</div>
+  <div class="invoice_under">
+    $<%= @agreement.cost2 %>
+  </div>
+  <div class="description">
+    <% if @agreement.lost2 == "" %>
+      Null
+    <% else %>
+    <%= @agreement.lost2 %>
+    <% end %>
+  </div>
+
+  <div class="number">4</div>
+  <div class="invoice_under">
+    $<%= @agreement.cost3 %>
+  </div>
+  <div class="description">
+    <% if @agreement.lost3 == "" %>
+      Null
+    <% else %>
+    <%= @agreement.lost3 %>
+    <% end %>
+  </div>
+
+  <div class="number">5</div>
+  <div class="invoice_under">
+    $<%= @agreement.cost4 %>
+  </div>
+  <div class="description">
+    <% if @agreement.lost4 == "" %>
+      Null
+    <% else %>
+    <%= @agreement.lost4 %>
+    <% end %>
+  </div>
+
+</div>
 
 <br />
 
@@ -249,7 +249,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd00 %>
   </div>
   <div class="description">
-    <% unless @agreement.item00 != nil %>
+    <% unless @agreement.item00 != "" %>
       Null
     <% end %>
     <%= @agreement.item00 %>
@@ -274,7 +274,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd01 %>
   </div>
   <div class="description">
-    <% unless @agreement.item01 != nil %>
+    <% unless @agreement.item01 != "" %>
       Null
     <% end %>
     <%= @agreement.item01 %>
@@ -299,7 +299,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd02 %>
   </div>
   <div class="description">
-    <% unless @agreement.item02 != nil %>
+    <% unless @agreement.item02 != "" %>
       Null
     <% end %>
     <%= @agreement.item02 %>
@@ -324,7 +324,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd03 %>
   </div>
   <div class="description">
-    <% unless @agreement.item03 != nil %>
+    <% unless @agreement.item03 != "" %>
       Null
     <% end %>
     <%= @agreement.item03 %>
@@ -349,7 +349,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd04 %>
   </div>
   <div class="description">
-    <% unless @agreement.item04 != nil %>
+    <% unless @agreement.item04 != "" %>
       Null
     <% end %>
     <%= @agreement.item04 %>
@@ -374,7 +374,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd05 %>
   </div>
   <div class="description">
-    <% unless @agreement.item05 != nil %>
+    <% unless @agreement.item05 != "" %>
       Null
     <% end %>
     <%= @agreement.item05 %>
@@ -399,7 +399,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd06 %>
   </div>
   <div class="description">
-    <% unless @agreement.item06 != nil %>
+    <% unless @agreement.item06 != "" %>
       Null
     <% end %>
     <%= @agreement.item06 %>
@@ -424,7 +424,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd07 %>
   </div>
   <div class="description">
-    <% unless @agreement.item07 != nil %>
+    <% unless @agreement.item07 != "" %>
       Null
     <% end %>
     <%= @agreement.item07 %>
@@ -449,7 +449,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd08 %>
   </div>
   <div class="description">
-    <% unless @agreement.item08 != nil %>
+    <% unless @agreement.item08 != "" %>
       Null
     <% end %>
     <%= @agreement.item08 %>
@@ -474,7 +474,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd09 %>
   </div>
   <div class="description">
-    <% unless @agreement.item09 != nil %>
+    <% unless @agreement.item09 != "" %>
       Null
     <% end %>
     <%= @agreement.item09 %>
@@ -499,7 +499,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd10 %>
   </div>
   <div class="description">
-    <% unless @agreement.item10 != nil %>
+    <% unless @agreement.item10 != "" %>
       Null
     <% end %>
     <%= @agreement.item10 %>
@@ -524,7 +524,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd11 %>
   </div>
   <div class="description">
-    <% unless @agreement.item11 != nil %>
+    <% unless @agreement.item11 != "" %>
       Null
     <% end %>
     <%= @agreement.item11 %>
@@ -549,7 +549,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd12 %>
   </div>
   <div class="description">
-    <% unless @agreement.item12 != nil %>
+    <% unless @agreement.item12 != "" %>
       Null
     <% end %>
     <%= @agreement.item12 %>
@@ -574,7 +574,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd13 %>
   </div>
   <div class="description">
-    <% unless @agreement.item13 != nil %>
+    <% unless @agreement.item13 != "" %>
       Null
     <% end %>
     <%= @agreement.item13 %>
@@ -599,7 +599,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd14 %>
   </div>
   <div class="description">
-    <% unless @agreement.item14 != nil %>
+    <% unless @agreement.item14 != "" %>
       Null
     <% end %>
     <%= @agreement.item14 %>
@@ -624,7 +624,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd15 %>
   </div>
   <div class="description">
-    <% unless @agreement.item15 != nil %>
+    <% unless @agreement.item15 != "" %>
       Null
     <% end %>
     <%= @agreement.item15 %>
@@ -649,7 +649,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd16 %>
   </div>
   <div class="description">
-    <% unless @agreement.item16 != nil %>
+    <% unless @agreement.item16 != "" %>
       Null
     <% end %>
     <%= @agreement.item16 %>
@@ -674,7 +674,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd17 %>
   </div>
   <div class="description">
-    <% unless @agreement.item17 != nil %>
+    <% unless @agreement.item17 != "" %>
       Null
     <% end %>
     <%= @agreement.item17 %>
@@ -699,7 +699,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd18 %>
   </div>
   <div class="description">
-    <% unless @agreement.item18 != nil %>
+    <% unless @agreement.item18 != "" %>
       Null
     <% end %>
     <%= @agreement.item18 %>
@@ -724,7 +724,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd19 %>
   </div>
   <div class="description">
-    <% unless @agreement.item19 != nil %>
+    <% unless @agreement.item19 != "" %>
       Null
     <% end %>
     <%= @agreement.item19 %>
@@ -749,7 +749,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd20 %>
   </div>
   <div class="description">
-    <% unless @agreement.item20 != nil %>
+    <% unless @agreement.item20 != "" %>
       Null
     <% end %>
     <%= @agreement.item20 %>
@@ -774,7 +774,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd21 %>
   </div>
   <div class="description">
-    <% unless @agreement.item21 != nil %>
+    <% unless @agreement.item21 != "" %>
       Null
     <% end %>
     <%= @agreement.item21 %>
@@ -799,7 +799,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd22 %>
   </div>
   <div class="description">
-    <% unless @agreement.item22 != nil %>
+    <% unless @agreement.item22 != "" %>
       Null
     <% end %>
     <%= @agreement.item22 %>
@@ -824,7 +824,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd23 %>
   </div>
   <div class="description">
-    <% unless @agreement.item23 != nil %>
+    <% unless @agreement.item23 != "" %>
       Null
     <% end %>
     <%= @agreement.item23 %>
@@ -849,7 +849,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd24 %>
   </div>
   <div class="description">
-    <% unless @agreement.item24 != nil %>
+    <% unless @agreement.item24 != "" %>
       Null
     <% end %>
     <%= @agreement.item24 %>
@@ -874,7 +874,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd25 %>
   </div>
   <div class="description">
-    <% unless @agreement.item25 != nil %>
+    <% unless @agreement.item25 != "" %>
       Null
     <% end %>
     <%= @agreement.item25 %>
@@ -899,7 +899,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd26 %>
   </div>
   <div class="description">
-    <% unless @agreement.item26 != nil %>
+    <% unless @agreement.item26 != "" %>
       Null
     <% end %>
     <%= @agreement.item26 %>
@@ -924,7 +924,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd27 %>
   </div>
   <div class="description">
-    <% unless @agreement.item27 != nil %>
+    <% unless @agreement.item27 != "" %>
       Null
     <% end %>
     <%= @agreement.item27 %>
@@ -949,7 +949,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd28 %>
   </div>
   <div class="description">
-    <% unless @agreement.item28 != nil %>
+    <% unless @agreement.item28 != "" %>
       Null
     <% end %>
     <%= @agreement.item28 %>
@@ -974,7 +974,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd29 %>
   </div>
   <div class="description">
-    <% unless @agreement.item29 != nil %>
+    <% unless @agreement.item29 != "" %>
       Null
     <% end %>
     <%= @agreement.item29 %>
@@ -999,7 +999,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd30 %>
   </div>
   <div class="description">
-    <% unless @agreement.item30 != nil %>
+    <% unless @agreement.item30 != "" %>
       Null
     <% end %>
     <%= @agreement.item30 %>
@@ -1024,7 +1024,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd31 %>
   </div>
   <div class="description">
-    <% unless @agreement.item31 != nil %>
+    <% unless @agreement.item31 != "" %>
       Null
     <% end %>
     <%= @agreement.item31 %>
@@ -1049,7 +1049,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd32 %>
   </div>
   <div class="description">
-    <% unless @agreement.item32 != nil %>
+    <% unless @agreement.item32 != "" %>
       Null
     <% end %>
     <%= @agreement.item32 %>
@@ -1074,7 +1074,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd33 %>
   </div>
   <div class="description">
-    <% unless @agreement.item33 != nil %>
+    <% unless @agreement.item33 != "" %>
       Null
     <% end %>
     <%= @agreement.item33 %>
@@ -1099,7 +1099,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd34 %>
   </div>
   <div class="description">
-    <% unless @agreement.item34 != nil %>
+    <% unless @agreement.item34 != "" %>
       Null
     <% end %>
     <%= @agreement.item34 %>
@@ -1124,7 +1124,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd35 %>
   </div>
   <div class="description">
-    <% unless @agreement.item35 != nil %>
+    <% unless @agreement.item35 != "" %>
       Null
     <% end %>
     <%= @agreement.item35 %>
@@ -1149,7 +1149,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd36 %>
   </div>
   <div class="description">
-    <% unless @agreement.item36 != nil %>
+    <% unless @agreement.item36 != "" %>
       Null
     <% end %>
     <%= @agreement.item36 %>
@@ -1174,7 +1174,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd37 %>
   </div>
   <div class="description">
-    <% unless @agreement.item37 != nil %>
+    <% unless @agreement.item37 != "" %>
       Null
     <% end %>
     <%= @agreement.item37 %>
@@ -1199,7 +1199,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd38 %>
   </div>
   <div class="description">
-    <% unless @agreement.item38 != nil %>
+    <% unless @agreement.item38 != "" %>
       Null
     <% end %>
     <%= @agreement.item38 %>
@@ -1224,7 +1224,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd39 %>
   </div>
   <div class="description">
-    <% unless @agreement.item39 != nil %>
+    <% unless @agreement.item39 != "" %>
       Null
     <% end %>
     <%= @agreement.item39 %>
@@ -1249,7 +1249,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd40 %>
   </div>
   <div class="description">
-    <% unless @agreement.item40 != nil %>
+    <% unless @agreement.item40 != "" %>
       Null
     <% end %>
     <%= @agreement.item40 %>
@@ -1274,7 +1274,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd41 %>
   </div>
   <div class="description">
-    <% unless @agreement.item41 != nil %>
+    <% unless @agreement.item41 != "" %>
       Null
     <% end %>
     <%= @agreement.item41 %>
@@ -1299,7 +1299,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd42 %>
   </div>
   <div class="description">
-    <% unless @agreement.item42 != nil %>
+    <% unless @agreement.item42 != "" %>
       Null
     <% end %>
     <%= @agreement.item42 %>
@@ -1324,7 +1324,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd43 %>
   </div>
   <div class="description">
-    <% unless @agreement.item43 != nil %>
+    <% unless @agreement.item43 != "" %>
       Null
     <% end %>
     <%= @agreement.item43 %>
@@ -1349,7 +1349,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd44 %>
   </div>
   <div class="description">
-    <% unless @agreement.item44 != nil %>
+    <% unless @agreement.item44 != "" %>
       Null
     <% end %>
     <%= @agreement.item44 %>
@@ -1374,7 +1374,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd45 %>
   </div>
   <div class="description">
-    <% unless @agreement.item45 != nil %>
+    <% unless @agreement.item45 != "" %>
       Null
     <% end %>
     <%= @agreement.item45 %>
@@ -1399,7 +1399,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd46 %>
   </div>
   <div class="description">
-    <% unless @agreement.item46 != nil %>
+    <% unless @agreement.item46 != "" %>
       Null
     <% end %>
     <%= @agreement.item46 %>
@@ -1424,7 +1424,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd47 %>
   </div>
   <div class="description">
-    <% unless @agreement.item47 != nil %>
+    <% unless @agreement.item47 != "" %>
       Null
     <% end %>
     <%= @agreement.item47 %>
@@ -1449,7 +1449,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd48 %>
   </div>
   <div class="description">
-    <% unless @agreement.item48 != nil %>
+    <% unless @agreement.item48 != "" %>
       Null
     <% end %>
     <%= @agreement.item48 %>
@@ -1474,7 +1474,7 @@ Agreement created by <%= @agreement.employee %>
     <%= @agreement.wd49 %>
   </div>
   <div class="description">
-    <% unless @agreement.item49 != nil %>
+    <% unless @agreement.item49 != "" %>
       Null
     <% end %>
     <%= @agreement.item49 %>
