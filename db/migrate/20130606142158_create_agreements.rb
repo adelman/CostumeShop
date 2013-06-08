@@ -6,9 +6,9 @@ class CreateAgreements < ActiveRecord::Migration
       t.string :email
       t.string :box
       t.string :title
-      t.datetime :perfstart
-      t.datetime :perfend
-      t.datetime :duedate
+      t.date :perfstart
+      t.date :perfend
+      t.date :duedate
       t.string :financer
       t.string :employee
 

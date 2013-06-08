@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(:version => 20130607201751) do
     t.string   "email"
     t.string   "box"
     t.string   "title"
-    t.datetime "perfstart"
-    t.datetime "perfend"
-    t.datetime "duedate"
+    t.date     "perfstart"
+    t.date     "perfend"
+    t.date     "duedate"
     t.string   "financer"
     t.string   "employee"
     t.datetime "created_at",                                 :null => false
