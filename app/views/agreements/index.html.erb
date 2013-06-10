@@ -13,7 +13,7 @@
 <% @agreements.each do |agreement| %>
   <tr>
     <td><%= agreement.name %></td>
-    <td><%= (agreement.duedate).to_date %></td>
+    <td><%= agreement.duedate %></td>
     <td><%= agreement.employee %></td>
     <td><%= link_to 'Show', agreement %></td>
     <td><%= link_to 'Edit', edit_agreement_path(agreement) %></td>
