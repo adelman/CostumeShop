@@ -3,7 +3,8 @@ class AgreementMailer < ActionMailer::Base
 
   def welcome_email(agg)
     @agreement = agg
-    email_with_name = "#{@user.name} <#{@user.email}>"
+    email_with_name = "#{agg.name} <#{agg.email}>"
     mail(:to => email_with_name, :subject => "Here is a copy of your lending agreement.")
   end
+
 end
