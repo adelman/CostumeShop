@@ -98,7 +98,7 @@ class AgreementsController < ApplicationController
 
     respond_to do |format|
       if @agreement.save
-        AgreementMailer.test_email(@agreement).deliver
+        AgreementMailer.welcome_email(@agreement).deliver
         format.html { redirect_to @agreement, :notice => 'Agreement was successfully created.' }
         format.json { render :json => @agreement, :status => :created, :location => @agreement }
       else
