@@ -230,6 +230,7 @@ Agreement created by <%= @agreement.employee %>
     Garment Description
   </div>  
 
+<% unless @agreement.item00 == "" %>
   <div class="number">1</div>
   <div class="back">
     <% if @agreement.back00 == nil || @agreement.back00 == false %>
@@ -254,8 +255,10 @@ Agreement created by <%= @agreement.employee %>
     <% end %>
     <%= @agreement.item00 %>
   </div>
+<% end %>
 
-<div class="number">2</div>
+
+  <div class="number">2</div>
   <div class="back">
     <% if @agreement.back01 == nil || @agreement.back01 == false %>
       &#9744;
