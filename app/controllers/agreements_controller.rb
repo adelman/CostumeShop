@@ -1,6 +1,11 @@
 require 'imgur'
 
 class AgreementsController < ApplicationController
+
+  http_basic_authenticate_with :name => APP_CONFIG['username'], 
+                               :password => APP_CONFIG['password'], 
+                               :only => :destroy
+
   # GET /agreements
   # GET /agreements.json
   def index
@@ -148,6 +153,5 @@ class AgreementsController < ApplicationController
       return uploaded_img["image_hash"]
     end
   end
-    
 
 end
