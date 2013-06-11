@@ -7,7 +7,7 @@ class HomeController < ApplicationController
 
   def authenticate
     authenticate_or_request_with_http_basic do |user, pass|
-      user==USERNAME && pass=PASSWORD
+      user==APP_CONFIG['username'] && pass=APP_CONFIG['password']
     end
   end
 end
