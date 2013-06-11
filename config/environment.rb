@@ -3,3 +3,5 @@ require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
 CostumeShop::Application.initialize!
+
+APP_CONFIG = YAML.load_file("config/config.yml")
