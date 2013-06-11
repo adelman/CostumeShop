@@ -1,5 +1,5 @@
 class AgreementMailer < ActionMailer::Base
-  default :from => "madelman@wesleyan.edu"
+  default :from => "costumeshop@wesleyan.edu"
 
   def welcome_email(agg)
     @agreement = agg
