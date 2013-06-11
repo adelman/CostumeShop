@@ -9,7 +9,7 @@
 
     <p>We are sending this email to remind you that the items you have out from
     the costume shop are due back <strong style="color: red;">
-    <%= @agreement.duedate %></strong> by 3:00 p.m. </p>
+    <%= @agreement.duedate.to_date %></strong> by 3:00 p.m. </p>
 
     <p>Please do not forget to wash costumes that are machine washable. Anything
     that has to be dry cleaned will be sent out by the shop, but garments which
@@ -34,6 +34,10 @@
     present and in good condition. Please contact us if you have any questions,
     or if for any reason you won't be able to return your costumes by their due
     date.</p>
+
+    <p>Thanks,</p>
+
+    <p>The Costume Collection</p>
 
   </body>
 </html>
