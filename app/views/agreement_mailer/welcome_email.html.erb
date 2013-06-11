@@ -66,14 +66,14 @@
   </div>  
 
   <div style="overflow:hidden; float:left; width:20px; text-align:center; border-bottom: 1px solid;">1</div>
-  <div style="float:right; white-space:nowrap; width:50px; height:10px; text-align:center; border-bottom: 1px solid;">
+  <div style="float:right; white-space:nowrap; width:50px; text-align:center; border-bottom: 1px solid;">
     <% if @agreement.back00 == nil || @agreement.back00 == false %>
       &#9744;
     <% else %>
       &#9745;
     <% end %>
     </div>
-  <div style="white-space:nowrap; float:right; width:100px; text-align:center; border-bottom: 1px solid;">
+  <div style="white-space:nowrap; float:right; width:100px; height:18px;  text-align:center; border-bottom: 1px solid;">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo00}",
     :target => "_blank" %>
   </div>
