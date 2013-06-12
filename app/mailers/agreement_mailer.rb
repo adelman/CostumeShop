@@ -3,7 +3,7 @@ class AgreementMailer < ActionMailer::Base
 
   def welcome_email(agg)
     @agreement = agg
-    attachments['LendingAgreement.pdf'] = File.read('public/LendingAgreement.pdf')
+    attachments['BorrowingTerms.pdf'] = File.read('public/BorrowingTerms.pdf')
     email_with_name = "#{agg.name} <#{agg.email}>"
     mail(:to => email_with_name, :subject => "Costume Shop Lending Confirmation - Costumes Due #{agg.duedate}")
   end
