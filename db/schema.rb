@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130607201751) do
+ActiveRecord::Schema.define(:version => 20131006204236) do
 
   create_table "agreements", :force => true do |t|
     t.string   "name"
@@ -23,8 +24,8 @@ ActiveRecord::Schema.define(:version => 20130607201751) do
     t.date     "duedate"
     t.string   "financer"
     t.string   "employee"
-    t.datetime "created_at",                                 :null => false
-    t.datetime "updated_at",                                 :null => false
+    t.datetime "created_at",                                                    :null => false
+    t.datetime "updated_at",                                                    :null => false
     t.string   "lost0"
     t.decimal  "cost0",      :precision => 30, :scale => 10
     t.string   "lost1"
@@ -257,6 +258,12 @@ ActiveRecord::Schema.define(:version => 20130607201751) do
     t.string   "wd49"
     t.boolean  "back49"
     t.text     "photo49"
+    t.string   "wesid"
+    t.boolean  "is_done",                                    :default => false
+    t.boolean  "is_at_dry",                                  :default => false
+    t.boolean  "major_prob",                                 :default => false
+    t.boolean  "has_cost",                                   :default => false
+    t.boolean  "is_out",                                     :default => false
   end
 
   create_table "costumes", :force => true do |t|

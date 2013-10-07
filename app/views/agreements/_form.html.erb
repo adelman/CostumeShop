@@ -41,10 +41,60 @@
     <%= f.text_field :box %>
   </div></td>
   </tr>
+  <tr>
+    <td><div class="field">
+    <%= f.label :wesid %><br />
+    <%= f.text_field :wesid, :required => true %>
+    </div></td>
+  </tr>
 </table>
 
-  <br />
+<br />
 
+  <h3> General Information About Agreement </h3>
+    <table border="1">
+      <tr>
+        <td><div class="field">
+          <%= f.label "Are costumes still out?" %>
+        </div></td>      
+        <td><div class="field">
+          <%= f.label "Do any costumes have fees?" %>
+        </div></td>
+        <td><div class="field">
+          <%= f.label "Are any costumes at the dry cleaners?" %>
+        </div></td>
+        <td><div class="field">
+          <%= f.label "Is this agreement completed?" %>
+        </div></td>
+        <td><div class="field">
+          <%= f.label "Is there a major problem?" %>
+        </div></td>
+      </tr>
+
+      <tr>
+        <td><div class="field">
+          <%= f.check_box :is_out %>
+        </div></td>      
+        <td><div class="field">
+          <%= f.check_box :has_cost %>
+        </div></td>
+        <td><div class="field">
+          <%= f.check_box :is_at_dry %>
+        </div></td>
+        <td><div class="field">
+          <%= f.check_box :is_done %>
+        </div></td>
+        <td><div class="field">
+          <%= f.check_box :major_prob %>
+        </div></td>
+
+      </tr>
+    </table>
+
+
+
+</br>
+    
   
   <h3>Performance Information</h3>
 

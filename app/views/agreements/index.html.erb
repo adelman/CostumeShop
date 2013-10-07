@@ -1,6 +1,6 @@
 <h1>Listing agreements</h1>
 
-<table>
+<table border="1">
   <tr>
     <th>Lendee</th>
     <th>Due Date</th>
@@ -10,8 +10,23 @@
     <th></th>
   </tr>
 
+<% @agreements.sort_by! { |k| k.duedate } %>
 <% @agreements.each do |agreement| %>
-  <tr>
+  <% if agreement.is_out %>
+    <tr class="out">
+  <% elsif agreement.duedate < Date.today %>
+    <tr class="overdue">
+  <% elsif agreement.has_cost %>
+    <tr class="fees">
+  <% elsif agreement.is_at_dry %>
+    <tr class="dry-clean">
+  <% elsif agreement.is_done %>
+    <tr class="complete">
+  <% elsif agreement.major_prob %>
+    <tr class="issue">
+  <% else %>
+    <tr>
+  <% end %>
     <td><%= agreement.name %></td>
     <td><%= agreement.duedate %></td>
     <td><%= agreement.employee %></td>

@@ -21,6 +21,12 @@ Agreement created by <%= @agreement.employee %>
   <%= @agreement.box %>
 </p>
 
+<p>
+  <b>Email:</b>
+  <%= @agreement.wesid %>
+  </p>
+
+
 <br />
 
 <h3>Performance Information</h3>
@@ -44,6 +50,69 @@ Agreement created by <%= @agreement.employee %>
   <b>Financer:</b>
   <%= @agreement.financer %>
 </p>
+
+<br />
+
+<h3> General Information About Agreement </h3> 
+
+<table border="1">
+  <tr>
+    <td>
+      Are costumes still out?
+    </td>      
+    <td>
+      Do any costumes have fees?
+    </td>
+    <td>
+      Are any costumes at the dry cleaners?
+    </td>
+    <td>
+      Is this agreement completed?
+    </td>
+    <td>
+      Is there a major problem?
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <% if @agreement.is_out == nil || @agreement.is_out == false %>
+        &#9744;
+      <% else %>
+        &#9745;
+      <% end %>
+    </td>      
+    <td>
+      <% if @agreement.has_cost == nil || @agreement.has_cost == false %>
+        &#9744;
+      <% else %>
+        &#9745;
+      <% end %>
+    </td>      
+    <td>
+      <% if @agreement.is_at_dry == nil || @agreement.is_at_dry == false %>
+        &#9744;
+      <% else %>
+        &#9745;
+      <% end %>
+    </td>   
+    <td>
+      <% if @agreement.is_done == nil || @agreement.is_done == false %>
+        &#9744;
+      <% else %>
+        &#9745;
+      <% end %>
+    </td>       
+    <td>
+      <% if @agreement.major_prob == nil || @agreement.major_prob == false %>
+        &#9744;
+      <% else %>
+        &#9745;
+      <% end %>
+    </td>   
+  </tr>
+</table>
+
 
 <br />
 
