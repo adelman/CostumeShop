@@ -12,17 +12,17 @@
 
 <% @agreements.sort_by! { |k| k.duedate } %>
 <% @agreements.each do |agreement| %>
-  <% if agreement.is_out %>
+  <% if agreement.major_prob %>
     <tr class="issue">
-  <% elsif agreement.duedate < Date.today %>
-    <tr class="fees">
   <% elsif agreement.has_cost %>
+    <tr class="fees">
+  <% elsif agreement.duedate < Date.today  %>
     <tr class="overdue">
   <% elsif agreement.is_at_dry %>
     <tr class="dry-clean">
-  <% elsif agreement.is_done %>
+  <% elsif agreement.is_out %>
     <tr class="out">
-  <% elsif agreement.major_prob %>
+  <% elsif agreement.is_done %>
     <tr class="complete">
   <% else %>
     <tr>
