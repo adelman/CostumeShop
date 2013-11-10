@@ -11,7 +11,7 @@ class AgreementMailer < ActionMailer::Base
   def reminder_email(agg)
     @agreement = agg
     email_with_name = "#{agg.name} <#{agg.email}>"
-    mail(:to => email_with_name, :subject => "REMINDER: Costume Due #{agg.duedateagg.duedate.strftime("%A, %B %d")}")
+    mail(:to => email_with_name, :subject => "REMINDER: Costume Due #{agg.duedate.strftime("%A, %B %d")}")
   end
 
 end

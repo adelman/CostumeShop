@@ -1,5 +1,22 @@
 <h1>Listing agreements</h1>
 
+<div>
+
+  <div class="pull_right">
+<table border="1">
+  <tr class="issue"> <td> This agreement has a major issue. </td> </tr>
+  <tr class="fees"> <td> This agreement has fees. </td> </tr>
+  <tr class="overdue"> <td> This agreement has overdue items. </td> </tr>
+  <tr class="dry-clean"> <td> This agreement has items at the dry cleaner. </td> </tr>
+  <tr class="out"> <td> This agreement has costumes out. </td> </tr>
+  <tr class="complete"> <td> This agreement is complete. </td> </tr>
+
+</table>
+</div>
+
+
+  <div >
+
 <table border="1">
   <tr>
     <th>Lendee</th>
@@ -37,6 +54,16 @@
 <% end %>
 </table>
 
+</div>
+
+
+</div>
+
 <br />
 
-<%= link_to 'New Agreement', new_agreement_path %>
+<div>
+  <%= link_to 'New Agreement', new_agreement_path %>
+</div>
+<div>
+  <%= #link_to 'Send Reminders', reminder_path %>
+</div>

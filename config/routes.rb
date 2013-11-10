@@ -1,10 +1,15 @@
 CostumeShop::Application.routes.draw do
+
+  get '/agreements/reminder',  to: 'agreements#reminder',  as: 'reminder'
+
   resources :agreements do
     resources :costumes
   end
 
 
   get "home/index"
+
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
