@@ -2,17 +2,9 @@ require 'imgur'
 
 class AgreementsController < ApplicationController
 
-  #http_basic_authenticate_with :name => ENV['USERNAME'], 
-  #                             :password => ENV['PASSWORD'], 
-  #                             :only => :destroy
-
-  def reminder
-    Agreement.all.each do |remind|
-      AgreementMailer.reminder_email(remind).deliver #if (remind.duedate == (Date.today + 2.days))
-    end
-    redirect_to agreements_path    
-  end
-
+  http_basic_authenticate_with :name => ENV['USERNAME'], 
+                               :password => ENV['PASSWORD'], 
+                               :only => :destroy
 
   # GET /agreements
   # GET /agreements.json
