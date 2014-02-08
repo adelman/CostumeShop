@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131006204236) do
+ActiveRecord::Schema.define(:version => 20140208155057) do
 
   create_table "agreements", :force => true do |t|
     t.string   "name"
@@ -264,6 +264,56 @@ ActiveRecord::Schema.define(:version => 20131006204236) do
     t.boolean  "major_prob",                                 :default => false
     t.boolean  "has_cost",                                   :default => false
     t.boolean  "is_out",                                     :default => false
+    t.boolean  "early00"
+    t.boolean  "early01"
+    t.boolean  "early02"
+    t.boolean  "early03"
+    t.boolean  "early04"
+    t.boolean  "early05"
+    t.boolean  "early06"
+    t.boolean  "early07"
+    t.boolean  "early08"
+    t.boolean  "early09"
+    t.boolean  "early10"
+    t.boolean  "early11"
+    t.boolean  "early12"
+    t.boolean  "early13"
+    t.boolean  "early14"
+    t.boolean  "early15"
+    t.boolean  "early16"
+    t.boolean  "early17"
+    t.boolean  "early18"
+    t.boolean  "early19"
+    t.boolean  "early20"
+    t.boolean  "early21"
+    t.boolean  "early22"
+    t.boolean  "early23"
+    t.boolean  "early24"
+    t.boolean  "early25"
+    t.boolean  "early26"
+    t.boolean  "early27"
+    t.boolean  "early28"
+    t.boolean  "early29"
+    t.boolean  "early30"
+    t.boolean  "early31"
+    t.boolean  "early32"
+    t.boolean  "early33"
+    t.boolean  "early34"
+    t.boolean  "early35"
+    t.boolean  "early36"
+    t.boolean  "early37"
+    t.boolean  "early38"
+    t.boolean  "early39"
+    t.boolean  "early40"
+    t.boolean  "early41"
+    t.boolean  "early42"
+    t.boolean  "early43"
+    t.boolean  "early44"
+    t.boolean  "early45"
+    t.boolean  "early46"
+    t.boolean  "early47"
+    t.boolean  "early48"
+    t.boolean  "early49"
   end
 
   create_table "costumes", :force => true do |t|

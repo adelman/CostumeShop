@@ -1,0 +1,54 @@
+class AddEarlyReturn < ActiveRecord::Migration
+  def change
+    add_column :agreements, :early00, :boolean
+    add_column :agreements, :early01, :boolean
+    add_column :agreements, :early02, :boolean
+    add_column :agreements, :early03, :boolean
+    add_column :agreements, :early04, :boolean
+    add_column :agreements, :early05, :boolean
+    add_column :agreements, :early06, :boolean
+    add_column :agreements, :early07, :boolean
+    add_column :agreements, :early08, :boolean
+    add_column :agreements, :early09, :boolean
+    add_column :agreements, :early10, :boolean
+    add_column :agreements, :early11, :boolean
+    add_column :agreements, :early12, :boolean
+    add_column :agreements, :early13, :boolean
+    add_column :agreements, :early14, :boolean
+    add_column :agreements, :early15, :boolean
+    add_column :agreements, :early16, :boolean
+    add_column :agreements, :early17, :boolean
+    add_column :agreements, :early18, :boolean
+    add_column :agreements, :early19, :boolean
+    add_column :agreements, :early20, :boolean
+    add_column :agreements, :early21, :boolean
+    add_column :agreements, :early22, :boolean
+    add_column :agreements, :early23, :boolean
+    add_column :agreements, :early24, :boolean
+    add_column :agreements, :early25, :boolean
+    add_column :agreements, :early26, :boolean
+    add_column :agreements, :early27, :boolean
+    add_column :agreements, :early28, :boolean
+    add_column :agreements, :early29, :boolean
+    add_column :agreements, :early30, :boolean
+    add_column :agreements, :early31, :boolean
+    add_column :agreements, :early32, :boolean
+    add_column :agreements, :early33, :boolean
+    add_column :agreements, :early34, :boolean
+    add_column :agreements, :early35, :boolean
+    add_column :agreements, :early36, :boolean
+    add_column :agreements, :early37, :boolean
+    add_column :agreements, :early38, :boolean
+    add_column :agreements, :early39, :boolean
+    add_column :agreements, :early40, :boolean
+    add_column :agreements, :early41, :boolean
+    add_column :agreements, :early42, :boolean
+    add_column :agreements, :early43, :boolean
+    add_column :agreements, :early44, :boolean
+    add_column :agreements, :early45, :boolean
+    add_column :agreements, :early46, :boolean
+    add_column :agreements, :early47, :boolean
+    add_column :agreements, :early48, :boolean
+    add_column :agreements, :early49, :boolean
+  end
+end

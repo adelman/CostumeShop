@@ -289,6 +289,9 @@ Agreement created by <%= @agreement.employee %>
   <div class="back">
     Back?
   </div>
+  <div class="back">
+    Early?
+  </div>
   <div class="photo">
     Photo
   </div>
@@ -307,7 +310,14 @@ Agreement created by <%= @agreement.employee %>
     <% else %>
       &#9745;
     <% end %>
-    </div>
+  </div>
+  <div class="back">
+    <% if @agreement.early00 == nil || @agreement.early00 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+  </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo00}",
     :target => "_blank" %>
@@ -330,6 +340,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">2</div>
   <div class="back">
     <% if @agreement.back01 == nil || @agreement.back01 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early01 == nil || @agreement.early01 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -362,6 +379,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early02 == nil || @agreement.early02 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo02}",
     :target => "_blank" %>
@@ -384,6 +408,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">4</div>
   <div class="back">
     <% if @agreement.back03 == nil || @agreement.back03 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early03 == nil || @agreement.early03 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -416,6 +447,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early04 == nil || @agreement.early04 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo04}",
     :target => "_blank" %>
@@ -438,6 +476,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">6</div>
   <div class="back">
     <% if @agreement.back05 == nil || @agreement.back05 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early05 == nil || @agreement.early05 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -470,6 +515,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early06 == nil || @agreement.early06 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo06}",
     :target => "_blank" %>
@@ -492,6 +544,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">8</div>
   <div class="back">
     <% if @agreement.back07 == nil || @agreement.back07 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early07 == nil || @agreement.early07 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -524,6 +583,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early08 == nil || @agreement.early08 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo08}",
     :target => "_blank" %>
@@ -546,6 +612,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">10</div>
   <div class="back">
     <% if @agreement.back09 == nil || @agreement.back09 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early09 == nil || @agreement.early09 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -578,6 +651,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early10 == nil || @agreement.early10 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo10}",
     :target => "_blank" %>
@@ -600,6 +680,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">12</div>
   <div class="back">
     <% if @agreement.back11 == nil || @agreement.back11 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early11 == nil || @agreement.early11 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -632,6 +719,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early12 == nil || @agreement.early12 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo12}",
     :target => "_blank" %>
@@ -654,6 +748,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">14</div>
   <div class="back">
     <% if @agreement.back13 == nil || @agreement.back13 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early13 == nil || @agreement.early13 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -686,6 +787,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early14 == nil || @agreement.early14 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo14}",
     :target => "_blank" %>
@@ -708,6 +816,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">16</div>
   <div class="back">
     <% if @agreement.back15 == nil || @agreement.back15 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early15 == nil || @agreement.early15 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -740,6 +855,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early16 == nil || @agreement.early16 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo16}",
     :target => "_blank" %>
@@ -762,6 +884,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">18</div>
   <div class="back">
     <% if @agreement.back17 == nil || @agreement.back17 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early17 == nil || @agreement.early17 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -794,6 +923,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early18 == nil || @agreement.early18 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo18}",
     :target => "_blank" %>
@@ -816,6 +952,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">20</div>
   <div class="back">
     <% if @agreement.back19 == nil || @agreement.back19 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early19 == nil || @agreement.early19 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -848,6 +991,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early20 == nil || @agreement.early20 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo20}",
     :target => "_blank" %>
@@ -870,6 +1020,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">22</div>
   <div class="back">
     <% if @agreement.back21 == nil || @agreement.back21 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early21 == nil || @agreement.early21 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -902,6 +1059,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early22 == nil || @agreement.early22 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo22}",
     :target => "_blank" %>
@@ -924,6 +1088,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">24</div>
   <div class="back">
     <% if @agreement.back23 == nil || @agreement.back23 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early23 == nil || @agreement.early23 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -956,6 +1127,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early24 == nil || @agreement.early24 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo24}",
     :target => "_blank" %>
@@ -978,6 +1156,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">26</div>
   <div class="back">
     <% if @agreement.back25 == nil || @agreement.back25 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early25 == nil || @agreement.early25 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -1010,6 +1195,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early26 == nil || @agreement.early26 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo26}",
     :target => "_blank" %>
@@ -1032,6 +1224,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">28</div>
   <div class="back">
     <% if @agreement.back27 == nil || @agreement.back27 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early27 == nil || @agreement.early27 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -1064,6 +1263,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early28 == nil || @agreement.early28 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo28}",
     :target => "_blank" %>
@@ -1086,6 +1292,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">30</div>
   <div class="back">
     <% if @agreement.back29 == nil || @agreement.back29 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early29 == nil || @agreement.early29 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -1118,6 +1331,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early30 == nil || @agreement.early30 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo30}",
     :target => "_blank" %>
@@ -1140,6 +1360,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">32</div>
   <div class="back">
     <% if @agreement.back31 == nil || @agreement.back31 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early31 == nil || @agreement.early31 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -1172,6 +1399,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early32 == nil || @agreement.early32 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo32}",
     :target => "_blank" %>
@@ -1194,6 +1428,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">34</div>
   <div class="back">
     <% if @agreement.back33 == nil || @agreement.back33 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early33 == nil || @agreement.early33 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -1226,6 +1467,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early34 == nil || @agreement.early34 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo34}",
     :target => "_blank" %>
@@ -1248,6 +1496,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">36</div>
   <div class="back">
     <% if @agreement.back35 == nil || @agreement.back35 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early35 == nil || @agreement.early35 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -1280,6 +1535,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early36 == nil || @agreement.early36 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo36}",
     :target => "_blank" %>
@@ -1302,6 +1564,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">38</div>
   <div class="back">
     <% if @agreement.back37 == nil || @agreement.back37 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early37 == nil || @agreement.early37 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -1334,6 +1603,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early38 == nil || @agreement.early38 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo38}",
     :target => "_blank" %>
@@ -1356,6 +1632,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">40</div>
   <div class="back">
     <% if @agreement.back39 == nil || @agreement.back39 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early39 == nil || @agreement.early39 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -1388,6 +1671,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early40 == nil || @agreement.early40 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo40}",
     :target => "_blank" %>
@@ -1410,6 +1700,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">42</div>
   <div class="back">
     <% if @agreement.back41 == nil || @agreement.back41 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early41 == nil || @agreement.early41 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -1442,6 +1739,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early42 == nil || @agreement.early42 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo42}",
     :target => "_blank" %>
@@ -1464,6 +1768,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">44</div>
   <div class="back">
     <% if @agreement.back43 == nil || @agreement.back43 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early43 == nil || @agreement.early43 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -1496,6 +1807,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early44 == nil || @agreement.early44 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo44}",
     :target => "_blank" %>
@@ -1518,6 +1836,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">46</div>
   <div class="back">
     <% if @agreement.back45 == nil || @agreement.back45 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early45 == nil || @agreement.early45 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -1550,6 +1875,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early46 == nil || @agreement.early46 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo46}",
     :target => "_blank" %>
@@ -1572,6 +1904,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">48</div>
   <div class="back">
     <% if @agreement.back47 == nil || @agreement.back47 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early47 == nil || @agreement.early47 == false %>
       &#9744;
     <% else %>
       &#9745;
@@ -1604,6 +1943,13 @@ Agreement created by <%= @agreement.employee %>
       &#9745;
     <% end %>
     </div>
+  <div class="back">
+    <% if @agreement.early48 == nil || @agreement.early48 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
   <div class="photo">
     <%= link_to "Photo", "http://imgur.com/#{@agreement.photo48}",
     :target => "_blank" %>
@@ -1626,6 +1972,13 @@ Agreement created by <%= @agreement.employee %>
   <div class="number">50</div>
   <div class="back">
     <% if @agreement.back49 == nil || @agreement.back49 == false %>
+      &#9744;
+    <% else %>
+      &#9745;
+    <% end %>
+    </div>
+  <div class="back">
+    <% if @agreement.early49 == nil || @agreement.early49 == false %>
       &#9744;
     <% else %>
       &#9745;

@@ -25,31 +25,33 @@
     <th></th>
     <th></th>
     <th></th>
+    <th>Color</th>
   </tr>
 
 <% @agreements.sort_by! { |k| k.duedate } %>
 <% @agreements.each do |agreement| %>
-  <% if agreement.major_prob %>
-    <tr class="issue">
-  <% elsif agreement.has_cost %>
-    <tr class="fees">
-  <% elsif agreement.duedate < Date.today  %>
-    <tr class="overdue">
-  <% elsif agreement.is_at_dry %>
-    <tr class="dry-clean">
-  <% elsif agreement.is_out %>
-    <tr class="out">
-  <% elsif agreement.is_done %>
-    <tr class="complete">
-  <% else %>
-    <tr>
-  <% end %>
+  <tr>
     <td><%= agreement.name %></td>
     <td><%= agreement.duedate %></td>
     <td><%= agreement.employee %></td>
     <td><%= link_to 'Show', agreement %></td>
     <td><%= link_to 'Edit', edit_agreement_path(agreement) %></td>
     <td><%= link_to 'Destroy', agreement, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+    <% if agreement.major_prob %>
+      <td class="issue">
+    <% elsif agreement.has_cost %>
+      <td class="fees">
+    <% elsif agreement.is_done %>
+      <td class="complete">
+    <% elsif agreement.is_at_dry %>
+      <td class="dry-clean">
+    <% elsif agreement.duedate < Date.today%>
+      <td class="overdue">
+    <% elsif agreement.is_out %>
+      <td class="out">
+    <% else %>
+      <td>
+    <% end %>
   </tr>
 <% end %>
 </table>
