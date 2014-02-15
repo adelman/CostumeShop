@@ -102,7 +102,9 @@ class AgreementsController < ApplicationController
     @agreement.photo49 = upload_photo(@agreement.photo49)
 
     respond_to do |format|
-      if @agreement.save
+      logger.info("Inside respond")
+      if @agreement.save!
+        logger.info("Inside save")
         AgreementMailer.welcome_email(@agreement).deliver
         format.html { redirect_to @agreement, :notice => 'Agreement was successfully created.' }
         format.json { render :json => @agreement, :status => :created, :location => @agreement }
