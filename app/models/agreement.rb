@@ -70,6 +70,7 @@ class Agreement < ActiveRecord::Base
     self.back47 ||= self.early47
     self.back48 ||= self.early48
     self.back49 ||= self.early49
+    nil # Because false makes a save fail!
   end
 
 end
